@@ -32,8 +32,8 @@ namespace FilterWebsiteData
                 options.AddPolicy(MyAllowSpecificOrigins,
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:44319",
-                                "http://localhost:4200")
+                        builder.WithOrigins()
+                            .AllowAnyOrigin()
                             .AllowAnyHeader()
                             .AllowAnyMethod();
                     });
